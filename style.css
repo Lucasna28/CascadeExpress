@@ -12,7 +12,7 @@
   --btn-blue: #049CC6;
   --btn-grey: #E3E8E7;
   --dark-grey-text-color: #1E2523;
-  --shadow-color: #049CC6;
+  --shadow-color: #81CDE2;
   --hover-color: #ED6805;
   --grey-text-color: #F8FAF9;
 
@@ -106,7 +106,6 @@ article{
   margin: 4rem 0 0 0;
   border: 1px solid black;
   box-shadow: var(--shadow-color) 15px  15px;
-  padding: 2rem;
 }
 
 article img{
@@ -183,4 +182,18 @@ article img{
   .menu-list.show {
       display: flex;
   }
+}
+
+.login-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+  /* Add any other necessary styling */
+}
+#loginCheckbox:checked + .login-menu {
+  display: block;
 }
